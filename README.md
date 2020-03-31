@@ -7,8 +7,10 @@ Command for testing: python trader.py -m test && python plot_rewards.py -m test
 Data: 'aapl_msi_sbux.csv', closing price of Apple, Motorola, Starbucks
 
 Enviroment:
+
 	State: shares of the ith stock, price of the ith stock for i in [1,Number_of_stocks] and remaining cash
-	Actions: sell, hold, buy the ith stock, for i in [1,Number_of_stocks], 3^i total actions 
+	
+	Actions: sell, hold, buy the ith stock, for i in [1,Number_of_stocks], 3^Number_of_stocks total actions 
 
 Linear Model: Q-function approximation for states' aggregation
 
