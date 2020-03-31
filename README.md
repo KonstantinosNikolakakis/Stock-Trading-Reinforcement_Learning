@@ -15,5 +15,7 @@ Linear Model: Q-function approximation for states' aggregation
 Agent: ε-greedy approach to enforce exploration, perfomrs the steps of Q-learning and stochastic gradent decent to update the model's parameters.
 
 Plots: 
+
       1) histogram_training.png: Values of the episodes based on the training data
+      
       2) histogram_testing.png: Values of the episodes based on the testing data
