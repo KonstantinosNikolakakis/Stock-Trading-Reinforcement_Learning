@@ -27,7 +27,7 @@ class Agent(object):
 		target_full = self.model.predict(state) # Get the values based on the old parameters W,b
 		target_full[0,action] = target # update the entry of the corresponding action
 
-		self.model.sgd(state, target_full) # Stochastic gradent decent. Run one training step and update W, b
+		self.model.sgd(state, target_full) # Stochastic gradient descent. Run one training step and update W, b
 
 		if self.epsilon > self.epsilon_min: #decrease the probability of exploration
 			self.epsilon *= self.epsilon_decay
